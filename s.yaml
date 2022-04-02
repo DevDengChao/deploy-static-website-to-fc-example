@@ -1,0 +1,21 @@
+# https://github.com/devsapp/fc/blob/main/docs/zh/yaml/
+edition: 1.0.0
+name: my-awesome-website-project
+services:
+  my-service: # 任意的名称
+    component: devsapp/fc 			# 使用 fc 组件
+    props:
+      region: cn-shenzhen 			# 部署到任意的可用区, 例如深圳.
+      service:
+        name: my-awesome-websites 	# 深圳可用区的 my-awesome-websites 服务
+      function:
+        name: www-example-com 		# my-awesome-websites 服务下的一个函数
+        runtime: custom				# 使用 custom 运行环境
+        handler: dummy-handler 		# 由于使用了 custom 运行环境, 所以这里可以随便填
+        codeUri: ./					# 部署当前文件夹下的全部内容
+      triggers:
+        - name: http
+          type: http				# 创建一个 HTTP 类型的触发器, 以便客户端可以通过 HTTP 协议进行访问
+          config:
+            authType: anonymous		# 允许匿名访问
+            methods: [ HEAD, GET ]	# 静态网站只需要处理 HEAD 和 GET 请求就够了
