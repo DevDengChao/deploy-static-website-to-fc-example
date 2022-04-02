@@ -6,6 +6,9 @@
     "email": "2325690622@qq.com"
   },
   "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "express": "^4.17.3"
   }
