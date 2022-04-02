@@ -11,5 +11,8 @@
   },
   "dependencies": {
     "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@serverless-devs/s": "^2.0.103"
   }
 }
