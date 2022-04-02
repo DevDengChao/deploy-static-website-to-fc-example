@@ -1,0 +1,11 @@
+{
+  "name": "deploy-static-website-to-fc.example.dengchao.fun",
+  "version": "1.0.0",
+  "author": {
+    "name": "DevDengChao",
+    "email": "2325690622@qq.com"
+  },
+  "private": true,
+  "dependencies": {
+  }
+}
