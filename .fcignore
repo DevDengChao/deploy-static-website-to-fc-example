@@ -1,0 +1,7 @@
+.idea/
+.s/
+.fcignore
+.gitignore
+readme.md
+s.yaml
+yarn.lock
